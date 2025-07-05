@@ -8,6 +8,6 @@ def employee_list(employee_id: str = None) -> dict:
         return employees
     
     if not isinstance(employees, dict):
-        return {"error": "Internal data error"}
+        return {"error": "Internal Data Error"}
 
-    return employees.get(employee_id, {"error": "Employee not found"})
+    return employees.get(employee_id, {"error": "Employee Not Found"})
