@@ -2,7 +2,7 @@ from data.employees import employees
 
 def employee_list(employee_id: str = None) -> dict:
     """
-    Returns employee data by ID.
+    Return employee data as well as based on employee id.
     """
     if not employee_id:
         return employees
